@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+</head>
+<body>
+    <header>
+        <h1>Alberto Monet</h1>
+    </header>
+    <h2>Ingeniero en Sistemas Informáticos</h2>
+    <img src="/Users/macbookair/Downloads/IMG_2095.png.jpeg" style="width: 300px; height: auto;">
+    <main>
+    <section>
+        <h2>Información Personal</h2>
+        <div>
+            <ul>
+              <li>Correo electrónico: aemonet04@gmail.com</li>
+              <li>Telefóno: 6379-4729</li>
+              <li>Dirección: Panamá, Ciudad de Panamá</li>
+            </ul>
+          </div>
+    </section>
+    <section>
+        <h2>Educación</h2>
+        <div>
+            <ul>
+              <li>Universidad Latina de Panamá</li>
+              <li>Ingeniero en Sistemas Informáticos</li>
+              <li>4 años</li>
+            </ul>
+          </div>
+    </section>
+    <section>
+        <h2>Experiencia Laboral</h2>
+        <div>
+            <ul>
+              <li>Mc Donald's</li>
+              <li>Gerente</li>
+              <li>5 años</li>
+              <li>Descripción: Regañar y monitorear a la gente.</li>
+            </ul>
+          </div>
+    </section>
+    <section>
+        <h2>Habilidades</h2>
+        <div>
+            <ul>
+              <li>Jugador profesional de Minecraft.</li>
+              <li>Experto en dormir.</li>
+              <li>Hablo tres idiomas (más o menos).</li>
+              <li>Programador de videojuegos.</li>
+            </ul>
+          </div>
+    </section>
+    <section>
+        <h3>Formulario de Contacto</h3>
+        <form>
+        <label for="name"> Nombre: </label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <input type="submit" value="Enviar">
+        </form>
+        
+</body>
+</html>

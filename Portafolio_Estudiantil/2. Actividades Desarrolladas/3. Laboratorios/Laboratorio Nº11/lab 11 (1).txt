@@ -1,0 +1,65 @@
+﻿Clases y Objetos
+Define una clase y un objeto en tus propias palabras.
+Clase: Es una plantilla o modelo que define un tipo de objeto. Describe las propiedades (atributos) y comportamientos (métodos) que los objetos de esa clase tendrán.
+Objeto: Es una instancia concreta de una clase. Representa una entidad específica que tiene propiedades y puede realizar acciones definidas por su clase.
+¿Qué propiedades y métodos tenía la clase Coche que creaste?
+* Propiedades: color y marca.
+* Métodos: arrancar() y detener().
+¿Cómo se crea un objeto en PHP? Proporciona un ejemplo.
+Se crea un objeto en PHP utilizando la palabra clave new, seguida del nombre de la clase.
+php
+Copiar código
+$miCoche = new Coche();
+Describe un ejemplo de la vida real que podría ser representado por una clase y un objeto en programación.
+Ejemplo: Un Ordenador puede ser representado por una clase Ordenador con propiedades como procesador, ram, y almacenamiento, y métodos como encender() y apagar(). Un objeto de esta clase podría ser un ordenador específico como "MiOrdenador".
+Herencia
+¿Qué es la herencia en la programación orientada a objetos?
+La herencia es un mecanismo que permite que una clase (subclase o clase derivada) herede propiedades y métodos de otra clase (superclase o clase base). Esto promueve la reutilización de código y la creación de una jerarquía de clases.
+¿Qué clase creó la clase CocheDeportivo y qué propiedades y métodos heredó de la clase Coche?
+La clase CocheDeportivo hereda de la clase Coche. Hereda las propiedades color y marca, así como los métodos arrancar() y detener().
+Explica cómo la clase CocheDeportivo añadió funcionalidad adicional a la clase Coche.
+La clase CocheDeportivo añadió un método adicional llamado turbo(), que no está presente en la clase Coche. Esto permite que los objetos de la clase CocheDeportivo tengan una funcionalidad específica de coche deportivo.
+Proporciona un ejemplo de herencia en un contexto diferente al del coche (por ejemplo, animales, dispositivos electrónicos, etc.).
+Ejemplo: En el contexto de animales, podríamos tener una clase base Animal con propiedades como nombre y edad, y métodos como comer(). Luego, podríamos tener clases derivadas como Perro y Gato que heredan de Animal y añaden métodos específicos como ladrar() para Perro y maullar() para Gato.
+Polimorfismo
+Define polimorfismo en el contexto de la programación orientada a objetos.
+El polimorfismo es la capacidad de una función o método para comportarse de manera diferente según el objeto que lo invoca. Permite que un mismo método tenga diferentes comportamientos en diferentes clases.
+¿Cómo demostraste el polimorfismo en la clase Coche y CocheDeportivo?
+En el ejemplo, ambas clases Coche y CocheDeportivo implementan el método descripcion(), pero cada una proporciona una implementación diferente. Esto demuestra cómo un método puede comportarse de manera diferente en diferentes contextos de clase.
+Encapsulamiento
+Explica qué es el encapsulamiento y por qué es importante en la programación orientada a objetos.
+El encapsulamiento es el concepto de ocultar los detalles internos de un objeto y exponer solo lo necesario a través de métodos públicos. Es importante porque protege el estado interno del objeto y controla cómo se accede y modifica, lo que mejora la seguridad y la integridad del código.
+¿Cómo protegiste las propiedades color y marca en la clase Coche?
+Las propiedades color y marca están declaradas como private, lo que significa que no pueden ser accedidas directamente desde fuera de la clase.
+¿Qué son los métodos getter y setter y cómo se usan?
+Los métodos getter y setter son métodos públicos que permiten acceder y modificar las propiedades privadas de una clase. El getter se usa para obtener el valor de una propiedad, y el setter se usa para establecer el valor de una propiedad.
+php
+Copiar código
+public function setColor($color) {
+    $this->color = $color;
+}
+
+
+public function getColor() {
+    return $this->color;
+}
+
+
+Abstracción
+Define abstracción en tus propias palabras.
+La abstracción es el proceso de simplificar un problema al modelar solo las características esenciales y ocultar los detalles complejos. En programación, esto se logra creando clases abstractas y métodos abstractos que definen una interfaz general para las clases derivadas.
+¿Qué es una clase abstracta y cómo se utilizó en el archivo 05_abstraccion.php?
+Una clase abstracta es una clase que no se puede instanciar directamente y puede contener métodos abstractos que deben ser implementados por las clases derivadas. En 05_abstraccion.php, Vehiculo es una clase abstracta con un método abstracto descripcion(). La clase Coche extiende Vehiculo e implementa el método descripcion().
+Constructores y Destructores
+¿Qué es un constructor y cuándo se utiliza?
+Un constructor es un método especial que se ejecuta automáticamente cuando se crea un objeto de una clase. Se utiliza para inicializar las propiedades del objeto y realizar cualquier configuración necesaria.
+¿Cómo inicializaste las propiedades color y marca en el constructor de la clase Coche?
+Las propiedades color y marca se inicializaron en el constructor de la clase Coche mediante parámetros pasados al crear un nuevo objeto.
+php
+Copiar código
+public function __construct($color, $marca) {
+    $this->color = $color;
+    $this->marca = $marca;
+}
+¿Qué es un destructor y cuándo se ejecuta?
+Un destructor es un método especial que se ejecuta automáticamente cuando un objeto es destruido o cuando el script termina. Se utiliza para realizar tareas de limpieza, como liberar recursos o cerrar conexiones.
